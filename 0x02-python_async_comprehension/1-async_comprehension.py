@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
-'''Task 1.
+'''Task 1's module.
 '''
 import asyncio
 from typing import List
 
+async_generator = __import__('0-async_generator').async_generator
 
-wait_random = __import__('0-basic_async_syntax').wait_random
 
-
-async def wait_n(n: int, max_delay: int) -> List[float]:
-    '''Executes wait_random n times.
+async def async_comprehension() -> List[float]:
+    '''Collects 10 random numbers using async comprehension over async_generator.
     '''
-    wait_times = await asyncio.gather(
-        *tuple(map(lambda _: wait_random(max_delay), range(n)))
-    )
-    return sorted(wait_times)
+    random_numbers = [num async for num in async_generator()]
+    return random_numbers
