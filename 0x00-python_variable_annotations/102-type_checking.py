@@ -2,7 +2,6 @@
 """
 Module for zooming an array by a given factor.
 """
-
 from typing import List, Tuple
 
 
