@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''Task 1's module.
+'''Task 1.
 '''
 import asyncio
 from typing import List
