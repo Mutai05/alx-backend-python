@@ -5,6 +5,7 @@ Module for zooming an array by a given factor.
 
 from typing import List, Tuple
 
+
 def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
     """
     Zoom in on the elements of the tuple by the given factor.
